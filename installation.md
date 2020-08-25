@@ -48,4 +48,3 @@ Now you can now login to your personal Tiny Control Panel using the information 
 | PASSWORD: 123123 \(this is the password you have entered at the end of the installation\) |
 
 Goto the URL given in your installation and you will be able to start your journey in TinyCP!
-

@@ -46,7 +46,6 @@ Now you can now login to your personal Tiny Control Panel using the information 
 | URL: [http://192.168.2.1:63232](http://192.168.2.1:63232) \(this address is different for everyone\) |
 | LOGIN: admin |
 | PASSWORD: 123123 \(this is the password you have entered at the end of the installation\) |
-|  |
 
 Goto the URL given in your installation and you will be able to start your journey in TinyCP!
 

@@ -1,4 +1,4 @@
-# TinyCP - Documentation
+# Documentation
 
 [TinyCP - Website](https://tinycp.com)
 

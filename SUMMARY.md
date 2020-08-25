@@ -1,5 +1,6 @@
 # Table of contents
 
-* [TinyCP - Documentation](README.md)
+* [Documentation](README.md)
 * [Installation](installation.md)
+* [Features](features.md)
 

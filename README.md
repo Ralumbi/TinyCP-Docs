@@ -6,7 +6,7 @@ The Control Panel for UNIX systems Ubuntu and Debian are managed and having a re
 
 ## ~ About TinyCP
 
-TinyCP is originally designed for the company behind it Technalab. They made it free to use so its easier to catch bugs. Beside that they truly listen to us as community. The way this concept been created is the best available compared to any other control panels! TinyCP doesn't have its own php,nginx,apache libraries and so when you do not want it anymore or experience issues you can easily just remove TinyCP and reinstall it without having the troubles of making a complete new install on your server.
+TinyCP is originally designed for the company behind it Technalab. They made it free to use so its easier to catch bugs. Beside that they truly listen to the community. The way this control panel has been created is the best available compared to any other control panel! TinyCP doesn't have its own php,nginx,apache libraries and so when you do not want it anymore or experience issues you can easily just remove TinyCP and reinstall it without having the troubles of making a complete new install on your server.
 
 ### ~ Documentation Authors
 

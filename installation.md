@@ -8,7 +8,7 @@ The installation process of TinyCP is fairly easy, when you're not experienced f
 
 ## \# Essentials
 
-Before you should start the installation of TinyCP, update and upgrade your Operating System\(OS\) of the server. You can do this by:
+Before you should start the installation of TinyCP, update and upgrade your Operating System\(OS\) of the server. You can do this by typing into the terminal:
 
 * Ubuntu: `sudo apt update && sudo apt upgrade -y`
 * Debian: `sudo aptitude update && sudo aptitude full-upgrade -y`
@@ -33,13 +33,13 @@ Splitting this into two parts Ubuntu and Debian starting with Ubuntu
 * `sudo apt-get update`
 * `sudo apt-get install tinycp -y`
 
-During the installation process of TinyCP you will be asked to enter a password which will be the Admin password to enter your Tiny Control Panel.
+During the installation process of TinyCP you will be asked to enter a password which will be the Admin password to login to your Tiny Control Panel.
 
 ## \# Completed
 
 Now you can now login to your personal Tiny Control Panel using the information shown in the terminal. You must save this information on a secure place! \(we'd advice to write it down on paper\)
 
-~ Example:
+### \# How to connect
 
 | Information |
 | :--- |

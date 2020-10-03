@@ -35,6 +35,12 @@ Splitting this into two parts Ubuntu and Debian starting with Ubuntu
 
 During the installation process of TinyCP you will be asked to enter a password which will be the Admin password to login to your Tiny Control Panel.
 
+###   _\# Tip:_ 
+
+You can pre-setup a few variables in the installation.`TINYCP_USER="admin" TINYCP_PASS="secretpass" TINYCP_PORT="55555" apt-get install tinycp -y`
+
+This do mean that you will need to replace the last part of the installation. As is described above.
+
 ## \# Completed
 
 Now you can now login to your personal Tiny Control Panel using the information shown in the terminal. You must save this information on a secure place! \(we'd advice to write it down on paper\)

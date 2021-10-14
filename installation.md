@@ -67,11 +67,11 @@ add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mariadb.mirror.iphh.n
 
 >You can also add these sources later, but then you have to run a `sudo apt upgrade -y` to upgrade the already installed packages.
 
-### \# Starting the installation
+### \# Installation
 
-Splitting this into two parts Ubuntu and Debian starting with Ubuntu
+The following steps describe the installation of TinyCP on Ubuntu and Debian.
 
-### \# Ubuntu:
+#### \# Ubuntu:
 
 ```bash
 sudo apt install gnupg ca-certificates
@@ -81,7 +81,7 @@ sudo apt-get update
 sudo apt-get install tinycp -y
 ```
 
-### \# Debian:
+#### \# Debian:
 
 ```bash
 apt install gnupg ca-certificates
@@ -90,29 +90,25 @@ echo "deb http://repos.tinycp.com/ubuntu all nightbuild" | sudo tee /etc/apt/sou
 apt update
 apt install tinycp -y
 ```
+During the TinyCP installation process, you will be prompted to enter a password, which is the admin password for logging into your Tiny Control Panel.
 
-During the installation process of TinyCP you will be asked to enter a password which will be the Admin password to login to your Tiny Control Panel.
-
-###   _\# Tip:_ 
-
-You can pre-setup a few variables in the installation.
+>You can preset some variables during installation to fully automate the installation process
 ```bash
-TINYCP_USER="admin" TINYCP_PASS="secretpass" TINYCP_PORT="55555" apt-get install tinycp -y
+TINYCP_USER="admin" TINYCP_PASS="secretpass" TINYCP_PORT="55555" apt install tinycp -y
 ```
+Please replace the command described above accordingly.
 
-This do mean that you will need to replace the last part of the installation. As is described above.
+##### \# Important!
 
-## \# Completed
+Now you can log into your personal Tiny Control Panel with the data displayed in the terminal. You should save the login data immediately. There is no possibility to display them again.
 
-Now you can now login to your personal Tiny Control Panel using the information shown in the terminal. You must save this information on a secure place! \(we'd advice to write it down on paper\)
+## \# Access TinyCP
 
-### \# How to connect
-
-| Information |
-| :--- |
-| URL: [http://192.168.2.1:63232](http://192.168.2.1:63232) \(this address is different for everyone\) |
-| LOGIN: admin |
-| PASSWORD: 123123 \(this is the password you have entered at the end of the installation\) |
+| Data | Value |
+| :--- |:---|
+| URL: | **http://YOUR_IP:63232** (The port is assigned dynamically with each installation.)|
+| LOGIN: | **admin** |
+| PASSWORD: | **The password you assigned during installation** |
 
 Goto the URL given in your installation and you will be able to start your journey in TinyCP!
 

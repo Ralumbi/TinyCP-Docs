@@ -18,10 +18,8 @@ sudo apt update && sudo apt upgrade -y
 
 To get the latest versions of PHP and MariaDB for Ubuntu / Debian, you need to include third party sources before installing TinyCP. The following section explains how you can implement this.
 
-#### \# Ubuntu
-
-##### \# PHP
-
+{% tabs %} 
+{% tab title="PHP (Ubuntu)" %}
 Run the following commands to add the PHP repository for Ubuntu
 
 ```bash
@@ -29,21 +27,9 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 ```
+{% endtab %}
 
-##### \# MariaDB
-
-Run the following commands to add the MariaDB repository for Ubuntu. Replace **{UBUNTU_VERSION}** with your Ubuntu version, for example **focal**
-
-```bash
-sudo apt-get install software-properties-common
-sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mariadb.mirror.iphh.net/repo/10.6/ubuntu {UBUNTU_VERSION} main'
-```
-
-#### \# Debian
-
-##### \# PHP
-
+{% tab title="PHP (Debian)" %}
 Run the following commands to add the PHP repository for Debian
 
 ```bash
@@ -52,9 +38,18 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 wget -qO - https://packages.sury.org/php/apt.gpg | apt-key add -
 apt update
 ```
+{% endtab %}
 
-##### \# MariaDB
+{% tab title="MariaDB (Ubuntu)" %}
+Run the following commands to add the MariaDB repository for Ubuntu. Replace **{UBUNTU_VERSION}** with your Ubuntu version, for example **focal**
 
+```bash
+sudo apt-get install software-properties-common
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mariadb.mirror.iphh.net/repo/10.6/ubuntu {UBUNTU_VERSION} main'
+```
+{% endtab %}
+{% tab title="MariaDB (Debian)" %}
 Run the following commands to add the MariaDB repository for Debian. Replace **{DEBIAN_VERSION}** with your Debian version, for example **bullseye**
 
 ```bash
@@ -64,6 +59,8 @@ chmod -c 644 mariadb_release_signing_key.asc
 mv -vi mariadb_release_signing_key.asc /etc/apt/trusted.gpg.d/
 add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mariadb.mirror.iphh.net/repo/10.6/debian {DEBIAN_VERSION} main'
 ```
+{% endtab %}
+{% endtabs %} 
 
 >You can also add these sources later, but then you have to run a `sudo apt upgrade -y` to upgrade the already installed packages.
 
